@@ -7,7 +7,7 @@ class Strelka < Formula
   # Needs Python for testing installation
   depends_on :python => :build
   # Needs rsync for installing to #{prefix}
-  depends_on :rsync => :build
+  depends_on "homebrew/dupes/rsync" => :build
 
   def install
     system "./configure", "--disable-debug",
